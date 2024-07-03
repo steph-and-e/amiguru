@@ -9,16 +9,8 @@ import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
 import PatternEditor from './pages/Pattern Editor';
 
-function App() {
-  return (
-    <>
-      <Navbar/>
-      {/* <Home/> */}
-      <Dashboard/>
-
-    </>
-
-  );
+export default function Button({text, colour}) {
+    return (
+        <button classname={colour}>{text}</button>
+    )
 }
-
-export default App;
