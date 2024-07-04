@@ -1,19 +1,63 @@
+/* fonts */
+
+@font-face {
+  font-family: "PublicaSansRegular";   /*Can be any text*/
+  src: local("PublicaSansRegular"),
+    url("./fonts/Publica Sans/FaceType - PublicaSans-Regular.otf") format("opentype");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "PublicaSansBold";   /*Can be any text*/
+  src: local("PublicaSansBold"),
+    url("./fonts/Publica Sans/PublicaSans-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+  font-family: "PublicaSansLight";   /*Can be any text*/
+  src: local("PublicaSansLight"),
+    url("./fonts/Publica Sans/PublicaSans-Light.otf") format("opentype");
+    font-weight: light;
+}
+
+@font-face {
+  font-family: "PublicaSansMedium";   /*Can be any text*/
+  src: local("PublicaSansMedium"),
+    url("./fonts/Publica Sans/PublicaSans-Medium.otf") format("opentype");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "PublicaSansThin";   /*Can be any text*/
+  src: local("PublicaSansThin"),
+    url("./fonts/Publica Sans/PublicaSans-Thin.otf") format("opentype");
+  font-weight: thin;
+}
+
+/* body styling */
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: "PublicaSansLight", sans-serif;
+  font-size: 16px;
 }
 
+/* navbar styling */
+
 .nav {
-  background-color: blanchedalmond;
+  background-color: rgb(250, 238, 255);
   color: black;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
   padding: 0 1rem;
+  border: grey;
 }
 
 .nav ul {
@@ -34,11 +78,11 @@ body {
 }
 
 .nav li.active {
-  background-color: rgb(167, 131, 78);
+  /* background-color: rgb(167, 131, 78); */
 }
 
 .nav li:hover {
-  background-color: burlywood;
+  /* background-color: burlywood; */
 }
 
 .stretch {
@@ -49,6 +93,8 @@ body {
   float: right;
 }
 
+/* button styling */
+
 button {
   display: inline-block;
   text-align: center;
@@ -56,17 +102,21 @@ button {
   vertical-align: middle;
   border: 1px solid transparent;
   border: none;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 16px;
   line-height: 1.5;
-  border-radius: 0.25 rem;
-  box-shadow: 0 0 2px 1px rgba(0,0,0,0.3);
+  border-radius: 0.5rem;
+  /* box-shadow: 0 0 2px 1px rgba(0,0,0,0.3); */
+  font-family: "PublicaSansRegular", sans-serif;
+  margin: 18px 0px;
 }
 
 button.purple {
-
+  background-color: #D8AEED;
+  color: white;
 }
 
-button.white {
-
+button.transparent {
+  background-color: Transparent;
+  border:  1px solid rgba(0,0,0,0.15);
 }

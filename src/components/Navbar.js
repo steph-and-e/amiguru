@@ -7,18 +7,18 @@ export default function Navbar() {
             <a href="/" className="site-title"> amiguru</a>
             <ul className="nav-menu">
                 <li>
-                    <a href="/Lorem">Lorem</a>
+                    <a href="/Lorem">Doctor</a>
                 </li>
                 <li>
-                    <a href="/Ipsum">Ipsum</a>
+                    <a href="/Ipsum">Service</a>
                 </li>
                 <li>
-                    <a href="/Dolor">Dolor</a>
+                    <a href="/Dolor">About</a>
                 </li>
             </ul>
             {/* <div class="stretch"></div> */}
             <div class="authentication">
-                <Button colour="white" text="Log in"/>
+                <Button colour="transparent" text="Log in"/>
                 <Button colour="purple" text="Sign up"/>
             </div>
         </nav>

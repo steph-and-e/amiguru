@@ -1,3 +1,5 @@
+
+
 import './styles.css';
 // import components
 import Navbar from './components/Navbar';
@@ -9,7 +11,8 @@ import PatternEditor from './pages/PatternEditor';
 function App() {
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar/>
+      <Home/>
     </div>
   );
 }
