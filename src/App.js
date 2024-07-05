@@ -13,6 +13,7 @@ function App() {
     <div>
       <Navbar/>
       <Home/>
+      {/* <Dashboard/> */}
     </div>
   );
 }
