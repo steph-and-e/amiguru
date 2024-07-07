@@ -1,6 +1,7 @@
 export default function DashboardBanner() {
     return (
-        <div>
+        <div id="dashboard-banner">
+            HIIIIIIIIIIIIIIIIIIIIII
         </div>
     )
 }

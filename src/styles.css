@@ -49,15 +49,20 @@ body {
 
 /* navbar styling */
 
+
+
 .nav {
   background-color: rgb(250, 238, 255);
   color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 0 1rem;
-  border: grey;
+  display: grid;
+  grid-template-rows: 80px;
+  grid-template-columns: 200px 1fr 200px;
+  width: 100vw;
+  box-shadow: black 3px 3px 3px 3px;
+  z-index: 0;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0;
 }
 
 .nav ul {
@@ -85,12 +90,83 @@ body {
   /* background-color: burlywood; */
 }
 
-.stretch {
-  min-width: 50%;
-}
-
 .authentication {
   float: right;
+}
+
+/* dashboard styling */
+
+.dashboard-grid-container {
+  display: grid;
+  grid-template-columns: 280px 1fr 1fr 1fr;
+  grid-template-rows: 190px 5fr 4fr;
+  grid-template-areas:
+    "sidebar banner banner banner"
+    "sidebar main main main"
+    "sidebar main main main";
+  grid-gap: 15px;
+  height: 120vh;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 550px) {
+  .dashboard-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 0.2 3fr 3fr; */
+    /* grid-template-areas: */
+    height: 100vh;
+  }
+}
+
+#sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: white;
+  overflow-y: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  /* position: sticky;
+  -webkit-position: sticky;
+  top: 0; */
+}
+
+.sidebar-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar-list-item {
+  display: grid;
+
+  grid-gap: 8px;
+  padding: 8px 16px;
+  /* margin-top: 8px; */
+  border-radius: 10px;
+}
+
+.sidebar-list-item:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.sidebar-list-item > a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  /* z-index: 12 !important; */
+}
+
+#dashboard-banner {
+  grid-area: banner;
+  width: 100%;
+  height: 100%;
+  background-color: #D8AEED;
+  border-radius: 10px;
 }
 
 /* button styling */
@@ -105,10 +181,10 @@ button {
   padding: 0.5rem 1.25rem;
   font-size: 16px;
   line-height: 1.5;
-  border-radius: 0.5rem;
+  border-radius: 10px;
   /* box-shadow: 0 0 2px 1px rgba(0,0,0,0.3); */
   font-family: "PublicaSansRegular", sans-serif;
-  margin: 18px 0px;
+  /* margin: 18px 0px; */
 }
 
 button.purple {
@@ -119,4 +195,15 @@ button.purple {
 button.transparent {
   background-color: Transparent;
   border:  1px solid rgba(0,0,0,0.15);
+}
+
+/* hero styling */
+.hero {
+  align-items: center;
+}
+
+.container {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: vertical;
 }

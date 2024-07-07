@@ -1,4 +1,4 @@
-export default function DashboardButton(props) {
+export default function SidebarButton(props) {
     return (
         <div>
         </div>

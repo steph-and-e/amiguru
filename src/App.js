@@ -11,9 +11,7 @@ import PatternEditor from './pages/PatternEditor';
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Home/>
-      {/* <Dashboard/> */}
+      <Dashboard/>
     </div>
   );
 }
