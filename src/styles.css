@@ -105,7 +105,7 @@ body {
     "sidebar main main main"
     "sidebar main main main";
   grid-gap: 15px;
-  height: 120vh;
+  height: 150vh;
   margin-top: 15px;
 }
 
@@ -126,9 +126,10 @@ body {
   overflow-y: auto;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  /* position: sticky;
+  height: calc(100vh - 80px - 15px - 15px);
+  position: sticky;
   -webkit-position: sticky;
-  top: 0; */
+  top: calc(80px + 15px);
 }
 
 .sidebar-list {
