@@ -6,11 +6,11 @@ export default function Sidebar() {
     return (
         <aside id="sidebar">
             <div>
-                <Button colour="purple" text="New Pattern"/>
+                <Button id="new-pattern-button" colour="purple" text="+ New Pattern"/>
             </div>
 
             <ul className="sidebar-list">
-                <li className="sidebar-list-item">
+                <li className="sidebar-list-item active">
                     <a href="">
                         <FiHome className="sidebar-icon"/> Home
                     </a>

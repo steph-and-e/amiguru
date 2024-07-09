@@ -1,7 +1,7 @@
 // import components
 
-export default function Button({text, colour}) {
+export default function Button({id, text, colour, icon}) {
     return (
-        <button className={colour}>{text}</button>
+        <button id={id}className={colour}>{text}</button>
     )
 }
